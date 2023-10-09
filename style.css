@@ -131,3 +131,53 @@ nav {
     top: 30px;
     left: 0;
 }
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 60%;
+    height: 1500px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-textbox {
+    height: 15%;
+    background-color: #0061ff;
+}
+
+.multiple-columns {
+    height: 65%;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-column {
+    height: 20%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end
+}
+
+.column {
+    height: 100%;
+    width: 30%;
+    background-color: red;
+}
+
+.horizontal-column {
+    height: 85%;
+    width: 100%;
+    background-color: red;
+}
+
+
+
