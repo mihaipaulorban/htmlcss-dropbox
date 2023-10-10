@@ -35,6 +35,11 @@ button:hover {
 i {
     margin: 5px;
 }
+
+.important {
+    font-weight: bold;
+  }
+
 /* HEADER */
 
 header {
@@ -144,7 +149,7 @@ main {
 }
 
 .main-container {
-    width: 60%;
+    width: 63%;
     height: 1500px;
     display: flex;
     flex-direction: column;
@@ -285,10 +290,7 @@ main {
   
   .wide{
     padding: 13px 30px;
-  }
-
-  .price {
-    font-weight: bold;
+    margin-top: 70px;
   }
 
   .sub-info a {
@@ -301,5 +303,11 @@ main {
     color: #7dafff;
   }
   
-  
-  
+  .separator {
+    width: 25%;
+    margin: 40px 0;
+  }
+
+  .fa-check {
+    color: #0061ff;
+  }
