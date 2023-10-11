@@ -528,3 +528,149 @@ main {
 .client-info div {
     margin-top: 50px;
 }
+
+.try-container {
+    width: 100%;
+    background-color: #b4d0e7;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.try-box{
+    width: 87%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.try-button,
+.try-text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.try-text {
+    width: 60%;
+    height: 100%;
+}
+
+.try-button {
+    width: 40%;
+    height: 100%;
+}
+
+.simple-button {
+    border: none;
+    margin-bottom: 60px;
+    color:black;
+    padding: 12px 40px;
+    font-size: 17px;
+    background-color: white;
+}
+
+.simple-button:hover {
+    background-color: #eaeaea ;
+    cursor: pointer;
+}
+
+.try-box h3 {
+    font-size: 40px;
+    color: #61082b;
+}
+
+.ask-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ask-box {
+    width: 63%;
+    height: 80%;
+    margin: 100px 0;
+}
+
+.ask-box h3 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.ask {
+    border-top: #c2c2c2 solid 1px;
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+}
+
+.ask:last-child {
+        border-bottom: #c2c2c2 solid 1px;
+}
+
+.fa-chevron-down {
+    margin-left: 370px;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* Stile per le colonne */
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  /* Stile per il contenitore delle colonne */
+  .footer-columns-container {
+    display: flex;
+    width: 63%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  /* Stile per il separatore e il testo sotto */
+  .footer-separator {
+    width: 10%;
+    border: none;
+    border-top: 1px solid white;
+  }
+  .footer-language {
+    margin-top: 5px;
+  }
+
+.strong {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+.info-footer {
+    margin: 4px 0;
+}
+
+.footer-end {
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+    align-items: flex-start;
+}
+
+.footer-language {
+    margin: 30px 0;
+}
