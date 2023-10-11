@@ -18,28 +18,6 @@ a {
     color: black;
 }
 
-.nav-link {
-    padding: 30px 0;
-    position: relative;
-}
-
-.nav-link::after {
-    content: "";
-    position: absolute; 
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    transform: scaleX(0); 
-    transform-origin: 0 60%;
-    transition: transform 0.3s; 
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1); 
-}
-
 .button {
     border: none;
     color:white;
@@ -75,14 +53,9 @@ i {
 .important,
 .important-use {
     font-weight: bold;
-  }
-
-/* HEADER */
-
-header {
-    width: 100%;
-    margin-bottom: 80px;
 }
+
+/* BARRA NAVIGAZIONE */
 
 nav {
     width: 100%;
@@ -97,6 +70,15 @@ nav {
     z-index: 5;
 }
 
+
+.nav-dropbox > * {
+    margin: 0 20px;
+}
+
+.nav-user > * {
+    margin: 0 20px;
+}
+
 .nav-dropbox,
 .nav-user {
     height: 100%;
@@ -105,19 +87,40 @@ nav {
 
 }
 
+.nav-link {
+    padding: 30px 0;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: scaleX(0); 
+    transform-origin: 0 60%;
+    transition: transform 0.3s; 
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); 
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
 
 .header-container {
     height: 780px;
     width: 100%;
     margin-top: 80px;
-}
-
-.nav-dropbox > * {
-    margin: 0 20px;
-}
-
-.nav-user > * {
-    margin: 0 20px;
 }
 
 .upper-head {
@@ -198,6 +201,52 @@ main {
     height: 15%;
 }
 
+/* INPUT RADIO  */
+
+.radio-container {
+    display: flex;
+    margin-top: 70px;
+  }
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+.radio-input {
+    display: none;
+  }
+  
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+
+.radio-input:checked + .radio-custom::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .radio-input:checked + .radio-custom {
+    border: 5px solid #007bff;
+  }
+
+/* SEZIONE INFORMAZIONI DEI PIANI  */
+
 .multiple-columns {
     height: 65%;
     display: flex;
@@ -256,7 +305,6 @@ main {
     flex-direction: column;
 }
 
-
 .horizontal-logo {
     width: 100%;
     height: 20%;
@@ -286,103 +334,62 @@ main {
     margin-top: 20px;
 }
 
-.radio-container {
-    display: flex;
-    margin-top: 70px;
-  }
-
-.radio-label {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    cursor: pointer;
-  }
-
-.radio-input {
-    display: none;
-  }
-  
-  .radio-custom {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    margin-right: 8px;
-  }
-
-
-.radio-input:checked + .radio-custom::before {
-    content: '';
-    display: block;
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .radio-input:checked + .radio-custom {
-    border: 5px solid #007bff;
-  }
-
-
-  .info {
+.info {
     display: flex;
     align-items: flex-start; 
-  }
+}
   
-  .info i {
+.info i {
     margin-right: 10px; 
-  }
+}
   
-  .info-text {
+.info-text {
     display: flex;
     flex-direction: column;
-  }
+}
  
-  .month {
+.month {
     margin-bottom: 50px;
 
-  }
+}
   
   
-   h3 {
+h3 {
     margin-bottom: 10px;
     font-size: 25px;
-  }
+}
   
-  .wide{
+.wide{
     padding: 13px 30px;
     margin-top: 50px;
-  }
+}
 
-  .sub-info a,
-  .grid a {
+.sub-info a,
+.grid a {
     text-decoration: underline;
     color: #0061ff;
-  }
+}
 
-  .sub-info a:hover,
-  .grid a:hover {
+.sub-info a:hover,
+.grid a:hover {
     text-decoration: underline;
     color: #7dafff;
-  }
+}
   
-  .separator {
+.separator {
     width: 25%;
     margin: 40px 0;
-  }
+}
 
-  .fa-check {
+.fa-check {
     color: #0061ff;
   }
 
-  .important-use {
+.important-use {
     margin-bottom: 30px;
   }
+
+/* SEZIONE COLONNA ORIZZONTALE */
 
 .horizontal-plan {
     display: flex;
@@ -398,6 +405,8 @@ main {
 .horizontal-text {
     padding: 20px 30px;
 }
+
+/* SEZIONE PARTNER  */
 
 .partner-container {
     width: 63%;
@@ -424,6 +433,8 @@ main {
     width: 40%;
     padding: 50px;
 }
+
+/* SEZIONE GRIGLIA CON FUNZIONI DI DROPBOX */
 
 .grid{
     height: auto;
@@ -462,6 +473,8 @@ main {
     margin-bottom: 50px;
     margin-top: 150px;
 }
+
+/* SEZIONE CLIENTI */
 
 .client-grid {
     display: flex;
@@ -551,6 +564,8 @@ main {
     margin-top: 50px;
 }
 
+/* SEZIONE PROVA GRATUITA */
+
 .try-container {
     width: 100%;
     background-color: #b4d0e7;
@@ -605,6 +620,8 @@ main {
     color: #61082b;
 }
 
+/* SEZIONE DOMANDE */
+
 .ask-container {
     width: 100%;
     height: auto;
@@ -655,6 +672,8 @@ main {
     margin-left: 370px;
 }
 
+/* SEZIONE FOOTER */
+
 .footer {
     width: 100%;
     height: auto;
@@ -666,37 +685,37 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-  /* Stile per le colonne */
-  .footer-column {
+}
+
+.footer-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
-  }
-  /* Stile per il contenitore delle colonne */
-  .footer-columns-container {
+}
+
+.footer-columns-container {
     display: flex;
     width: 63%;
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
-  }
-  /* Stile per il separatore e il testo sotto */
-  .footer-separator {
+}
+
+.footer-separator {
     width: 10%;
     border: none;
     border-top: 1px solid white;
-  }
+}
   .footer-language {
     margin-top: 5px;
-  }
+}
 
 .strong {
     margin-bottom: 20px;
     font-weight: bold;
     font-size: larger;
-  }
+}
 
 .info-footer {
     margin: 4px 0;
