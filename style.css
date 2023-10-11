@@ -18,7 +18,7 @@ a {
     color: black;
 }
 
-button {
+.button {
     border: none;
     color:white;
     background-color: #0061ff;
@@ -27,7 +27,21 @@ button {
 
 }
 
-button:hover {
+.white-button {
+    margin-top: 40px;
+    color:black;
+    border: #ccc solid;
+    padding: 12px 15px;
+    font-size: 17px;
+    background-color: white;
+}
+
+.white-button:hover {
+    background-color: #c2c2c2 ;
+    cursor: pointer;
+}
+
+.button:hover {
     background-color: #619eff ;
     cursor: pointer;
 }
@@ -36,7 +50,8 @@ i {
     margin: 5px;
 }
 
-.important {
+.important,
+.important-use {
     font-weight: bold;
   }
 
@@ -146,11 +161,13 @@ nav {
 main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-container {
     width: 63%;
-    height: 1500px;
+    height: 1600px;
     display: flex;
     flex-direction: column;
 }
@@ -166,8 +183,7 @@ main {
 }
 
 .single-column {
-    height: 20%;
-    background-color: green;
+    height: 22%;
     display: flex;
     justify-content: center;
     align-items:flex-end
@@ -213,7 +229,34 @@ main {
 .horizontal-column {
     height: 85%;
     width: 100%;
-    background-color: red;
+    border:  rgb(209, 209, 209) 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.horizontal-logo {
+    width: 100%;
+    height: 20%;
+    border-bottom:  rgb(209, 209, 209) 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-info{
+    height: 100%;
+
+}
+
+.horizontal-plan {
+    height: 60%;
+    width: 100%;
+}
+
+.horizontal-text {
+    height: 40%;
+    width: 100%;
 }
 
 .main-textbox h2 {
@@ -283,14 +326,15 @@ main {
 
   }
   
-  .sub-info h3 {
+  
+   h3 {
     margin-bottom: 10px;
     font-size: 25px;
   }
   
   .wide{
     padding: 13px 30px;
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   .sub-info a {
@@ -311,3 +355,50 @@ main {
   .fa-check {
     color: #0061ff;
   }
+
+  .important-use {
+    margin-bottom: 30px;
+  }
+
+.horizontal-plan {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.plan-info,
+.plan-button {
+    padding: 40px 30px;
+}
+
+.horizontal-text {
+    padding: 20px 30px;
+}
+
+.partner-container {
+    width: 63%;
+    height: 543px;
+    display: flex;
+}
+
+.partner-box {
+    margin-top: 150px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.partner-image {
+    width: 60%;
+    background-image: url(img/partner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.partner-text {
+    width: 40%;
+    padding: 50px;
+}
+
+
